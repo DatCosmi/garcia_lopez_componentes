@@ -1,5 +1,6 @@
 import "./App.css";
 import styled from "styled-components";
+import Mapa from "./components/Mapa";
 
 const Button = styled.button`
   /* Adapt the colors based on primary prop */
@@ -18,17 +19,20 @@ function App() {
     <div className="App">
       <h1>Carlos Iván García López</h1>
       <h2>Práctica Componentes</h2>
-      <div>
-        <Button as="a" href="https://utd.edu.mx" primary>
-          UTD
-        </Button>
-        <Button as="a" href="https://github.com/DatCosmi" primary>
+      <div className="btn-container">
+        <Button as="a" href="https://github.com/DatCosmi">
           GitHub
         </Button>
-        <Button as="a" href="https://www.instagram.com/datcosmi" primary>
+        <Button as="a" href="https://utd.edu.mx">
+          UTD
+        </Button>
+        <Button as="a" href="https://www.instagram.com/datcosmi">
           Instagram
         </Button>
       </div>
+      <h2>Carrusel:</h2>
+      <br />
+      <div></div>
     </div>
   );
 }
